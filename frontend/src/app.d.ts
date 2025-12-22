@@ -8,6 +8,14 @@ declare global {
 		// interface PageState {}
 		// interface Platform {}
 	}
+
+	interface ImportMetaEnv {
+		readonly VITE_API_BASE?: string;
+	}
+
+	interface ImportMeta {
+		readonly env: ImportMetaEnv;
+	}
 }
 
 export {};
