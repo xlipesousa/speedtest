@@ -1,0 +1,9 @@
+node_modules/
+frontend/node_modules/
+frontend/.svelte-kit/
+frontend/build/
+frontend/.vite/
+backend/bin/
+backend/tmp/
+.vscode/
+.DS_Store
