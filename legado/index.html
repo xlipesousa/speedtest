@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedtest 21ºCT</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css"> 
+    <script type="text/javascript" src="speedtest.js"></script> 
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo 21ºCT">
+        <h1>Speed Test 21ºCT</h1>
+        <h2>Teste de velocidade entre a OM e o 21ºCT</h2>
+    </header>
+    
+    <main>
+        <div class="container">
+            <button id="startStopBtn" onclick="startStop()">Iniciar Teste</button>
+            <div id="test">
+                <div class="test-group">
+                    <div class="test-area">
+                        <div class="test-name">Download</div>
+                        <div id="dlText" class="meter-text"></div>
+                        <div class="unit">Mbit/s</div>
+                    </div>
+                    <div class="test-area">
+                        <div class="test-name">Upload</div>
+                        <div id="ulText" class="meter-text"></div>
+                        <div class="unit">Mbit/s</div>
+                    </div>
+                </div>
+                <div class="test-group">
+                    <div class="test-area">
+                        <div class="test-name">Ping</div>
+                        <div id="pingText" class="meter-text"></div>
+                        <div class="unit">ms</div>
+                    </div>
+                    <div class="test-area">
+                        <div class="test-name">Jitter</div>
+                        <div id="jitText" class="meter-text"></div>
+                        <div class="unit">ms</div>
+                    </div>
+                </div>
+                <div id="ipArea">
+                    IP Address: <span id="ip"></span>
+                </div>
+            </div></br></br>
+        <a href="http://docs.21ct.eb.mil.br/books/teste-com-iperf3">Teste com iperf3</a></br></br>
+	<a href="http://docs.21ct.eb.mil.br/books/dns">Teste de DNS</a></br></br>
+	<a href="http://teste.21ct.eb.mil.br/extrato-topologia-4rm.png">Extrato da topologia de rede 4ªRM</a></br>
+	</div>
+    </main>
+    
+    <footer>
+        <a href="https://github.com/librespeed/speedtest">Source code</a>
+    </footer>
+
+    <script src="script.js"></script>  
+</body>
+</html>
