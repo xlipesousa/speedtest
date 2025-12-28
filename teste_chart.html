@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste Chart.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <canvas id="myChart" width="400" height="400"></canvas>
+
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Download', 'Upload', 'Ping'],
+                datasets: [{
+                    label: 'Velocidade',
+                    data: [50, 60, 70],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    r: {
+                        angleLines: {
+                            display: false
+                        },
+                        pointLabels: {
+                            display: true
+                        },
+                        grid: {
+                            circular: true
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

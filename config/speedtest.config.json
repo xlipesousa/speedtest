@@ -1,0 +1,25 @@
+{
+  "defaultSettings": {
+    "time_dl_max": 20,
+    "time_ul_max": 20,
+    "test_order": "IP_D_U"
+  },
+  "ui": {
+    "labels": {
+      "start": "Iniciar Teste",
+      "abort": "Abortar"
+    },
+    "statusMessages": {
+      "idle": "Pronto para iniciar teste.",
+      "running": "Teste em andamento.",
+      "aborted": "Teste abortado.",
+      "complete": "Teste concluído.",
+      "error": "Ocorreu um erro durante o teste."
+    }
+  },
+  "telemetry": {
+    "enabled": true,
+    "endpoint": "backend/telemetry.php",
+    "includeIp": false
+  }
+}

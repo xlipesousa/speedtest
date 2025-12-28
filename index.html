@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedtest 21ºCT</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css"> 
+    <script type="text/javascript" src="speedtest.js"></script> 
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo 21ºCT">
+        <h1>Speed Test 21ºCT</h1>
+        <h2>Teste de velocidade entre a OM e o 21ºCT</h2>
+    </header>
+    
+    <main>
+        <div class="container">
+            <section class="control-panel">
+                <button id="startStopBtn" aria-controls="test" aria-describedby="statusMessage" aria-pressed="false">Iniciar Teste</button>
+                <p id="statusMessage" class="status-message" role="status" aria-live="polite">Pronto para iniciar teste.</p>
+            </section>
+            <div id="test" class="metrics-panel" aria-busy="false">
+                <div class="gauge-grid">
+                    <article class="gauge-card">
+                        <canvas id="dlGauge" width="220" height="220"></canvas>
+                        <div class="gauge-label">Download</div>
+                        <div id="dlText" class="gauge-value"></div>
+                        <div class="gauge-unit">Mbps</div>
+                    </article>
+                    <article class="gauge-card">
+                        <canvas id="ulGauge" width="220" height="220"></canvas>
+                        <div class="gauge-label">Upload</div>
+                        <div id="ulText" class="gauge-value"></div>
+                        <div class="gauge-unit">Mbps</div>
+                    </article>
+                </div>
+                <div class="metrics-side">
+                    <div class="stats-grid">
+                        <article class="stat-card">
+                            <div class="stat-label">Ping</div>
+                            <div id="pingText" class="stat-value"></div>
+                            <div class="stat-unit">ms</div>
+                        </article>
+                        <article class="stat-card">
+                            <div class="stat-label">Jitter</div>
+                            <div id="jitText" class="stat-value"></div>
+                            <div class="stat-unit">ms</div>
+                        </article>
+                    </div>
+                    <div id="ipArea" class="ip-card">
+                        <span class="ip-label">Endereço IP</span>
+                        <span id="ip" class="ip-value"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="links-panel">
+                <a href="http://docs.21ct.eb.mil.br/books/teste-com-iperf3">Teste com iperf3</a>
+                <a href="http://docs.21ct.eb.mil.br/books/dns">Teste de DNS</a>
+                <a href="http://teste.21ct.eb.mil.br/extrato-topologia-4rm.png">Extrato da topologia de rede 4ªRM</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <a href="https://github.com/librespeed/speedtest">Source code</a>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+    <script nomodule src="dist/script.legacy.js"></script>
+</body>
+</html>
