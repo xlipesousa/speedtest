@@ -77,6 +77,14 @@ async function bootstrap() {
     });
 
     controller.init();
+
+    const baseOrigin = window.location && (window.location.origin || (window.location.protocol + "//" + window.location.host));
+    if (baseOrigin) {
+        const extratoLinks = document.querySelectorAll('[data-dynamic-link="extrato-topologia"]');
+        extratoLinks.forEach(link => {
+            link.setAttribute("href", baseOrigin + "/extrato-topologia-4rm.png");
+        });
+    }
 }
 
 bootstrap().catch(function(err) {
