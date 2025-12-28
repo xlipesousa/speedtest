@@ -1,0 +1,13 @@
+# Formato: tipo:identificador
+# Atualmente suportado: apt:<pacote>
+apt:apache2
+apt:libapache2-mod-php
+apt:php
+apt:php-cli
+apt:php-curl
+apt:iperf3
+apt:nodejs
+apt:npm
+apt:logrotate
+apt:git
+apt:rsync
